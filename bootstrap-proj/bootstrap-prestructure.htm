@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!-- ==========================================<100>============================================ -->
+<!-- saved from url=(0097):
+     https://storage.googleapis.com/supplemental_media/udacityu/2730818600/bootstrap-prestructure.html
+-->
+<html>
+  <head>
+      <!-- Meta Section -->
+      <!-- Not sure about this: -->
+      <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+      <!-- Character Set, UTF-8 Good for Western Languages -->
+      <!-- Not using for now...
+      <meta charset="utf-8">
+       -->
+      <!-- Telling IE to use best engine available -->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- For mobile, how to display page when it loads -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Web Page Title - Change as appropriate... -->
+      <title>Example Puppy Portfolio</title>
+
+      <!-- External Reference Section: -->
+      <!-- Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
+
+      <!-- Cascading Style Sheets Section: -->
+      <!-- Order important here - first apply bootstrap, then tweak (and possibly override) with
+           our styles -->
+      <!-- The "minified" version removes whitespace and loads faster but harder to develop and
+          debug with -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- Leaving out, could use instead of "minified" version if needed:
+      <link rel="stylesheet" href="css/bootstrap.css">
+       -->
+      <!-- Our custom styles sheet, must appear after bootstrap -->
+      <link rel="stylesheet" href="css/style.css">
+
+      <!-- JavaScript Section: -->
+      <!-- Bootstrap JavaScript Libraries, JQuery must appear first (dependency) -->
+      <script src="js/jquery-3.1.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <!-- <img src="./bootstrap-prestructure_files/100x100"> -->
+          <img class="title-logo img-responsive" src="images/udacity_logo1.png" alt="Udacity Logo"
+            heigh="100" width="100">
+        </div>
+        <div class="col-md-6 text-right text-uppercase">
+          <h1 class="title-super text-thin">Jane Doette</h1>
+          <h3>Front-end Ninja</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class=col-md-12">
+          <!-- Note - default horizontal rule line is very thin -->
+          <hr>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <!-- <img src="./bootstrap-prestructure_files/1140x350" class="img-responsive"> -->
+          <img class="img-responsive" src="http://placekitten.com/1140/350" alt="Main Kitten Image">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="text-muted">Featured Work</h2>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-6">
+          <!-- <img src="./bootstrap-prestructure_files/555x300" class="img-responsive"> -->
+          <img class="img-responsive" src="http://placekitten.com/555/300" alt="Appify Kitten"
+            data-toggle="modal" data-target="#AppifyModal">
+          <h3 class="text-uppercase">Appify</h3>
+          <p><a href="https://github.com/udacity/Appify">github.com/udacity/Appify</a></p>
+        </div>
+        <div class="col-md-6">
+          <img class="img-responsive" src="http://placekitten.com/555/300" alt="Sunflower Kitten"
+            data-toggle="modal" data-target="#SunflowerModal">
+          <h3 class="text-uppercase">Sunflower</h3>
+          <p><a href="https://github.com/udacity/Sunflower">github.com/udacity/Sunflower</a></p>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-6">
+          <img class="img-responsive" src="http://placekitten.com/555/300" alt="Bokeh Kitten"
+            data-toggle="modal" data-target="#BokehModal">
+          <h3 class="text-uppercase">Bokeh</h3>
+          <p><a href="https://github.com/udacity/Bokeh">github.com/udacity/Bokeh</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- Modals -->
+    <!-- Appify -->
+    <div class="modal fade" id="AppifyModal" tabindex="-1" role="dialog"
+            aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Appify Page</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="http://placekitten.com/555/300">
+                    This was my first project in this class. I learned a lot about HTML.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Sunflower -->
+    <div class="modal fade" id="SunflowerModal" tabindex="-1" role="dialog"
+            aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Sunflower Page</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="http://placekitten.com/555/300">
+                    This was my second project in this class. I learned a lot about CSS.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bokeh -->
+    <div class="modal fade" id="BokehModal" tabindex="-1" role="dialog"
+            aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Bokeh Page</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="http://placekitten.com/555/300">
+                    This was my third project in this class. I learned a little about JavaScript.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modals -->
+  </body>
+</html>
+
